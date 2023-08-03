@@ -1,8 +1,10 @@
 from elevenlabs import clone, save, generate, play
 import deepl
 from elevenlabs import set_api_key
-set_api_key("f75f72aeaa36eea5c5b85332abe98e4f")
-auth_key = "ca17eff3-e68c-fa62-8474-ce514e8e5cea:fx"  # Replace with your key
+from api_keys import ELEVEN_LABS_API_KEY, DEEPL_API_KEY
+
+set_api_key(ELEVEN_LABS_API_KEY)
+auth_key = DEEPL_API_KEY  # Replace with your key
 
 translator = deepl.Translator(auth_key)
 
